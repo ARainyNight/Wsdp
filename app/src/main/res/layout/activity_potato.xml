@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="土豆种植建议"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="         种植土豆其实就是种地，所以要先有土地，但种土豆的土地不能将就，得要符合土豆的习性，土豆虽然对土地不挑剔，但肥沃的土地种出来的土豆无论哪方面在市场上都更有优势，所以农户在选择土地的时候，尽量挑选水土较好的地方。"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="         当然了种植土豆的土地选好，就要关心该怎么种了，要大面积机械化的种植，肯定少不了机器，而机器的来往要有好的道路，所以交通一定要方便，要建好田地通往外界的道路，这些准备差不多了就开始考虑土豆生长需要的东西。"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="         这之前要明白一个问题，那就是保持田地水土的方法，水土流失对土地伤害十分的大，一旦水土流失了，这块田地就不能在使用，没了价值，这种亏损是致命的，而且也是农民无法料想的，其实对于水土流失的问题早有研究，树木是最好的解救方式，所以在土豆种植的同时，在田地周围种起树来，可以很好的处理这个问题，而且要考虑大雨，建立良好的排水和浇灌系统，而且这些工作要做到位，不可随意糊弄，在真正的险情面前才能将损失做到最小。"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="         土豆的种子一定要进行挑选，选出那些长相好看、圆润、没有被虫侵蚀的带芽的部分进行播种。"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="         土豆种植最关键的一个点大家应该都知道，那就是种植土豆本身了，这里面可有大学问，就拿种种子来说，你种的时候，不能隔太远也不能隔太近，其实老农户自己也有摸索，懂得这个道理，现在有科学的计算，这种科学的计算是经过检验的，对于提高土豆收成是最有效果的。"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="         将块状种子一同种入一个土坑之中，确保周围都是营养土，上面覆盖薄薄的一层营养土，教少许的水和杀菌剂。温度要保持在二十度左右。"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="         现在农户在种地时会使用地膜，其实这种工具对土豆种植也有好处，有些土地天生肥沃，农民不喜欢施肥，就土豆种植而言，施肥还是必要的，土豆除了需要土地本身的养料，农民还需要科学合理的施肥，可以帮助土豆获得高产。"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="         以前农民没有机器，其实花费在田里最多的时间就是锄草，杂草对任何农作物的生长都有影响，土豆也不例外，土豆的除草应根据土豆的涨势进行，对土豆来说，蝗虫等灾害破坏很大，使用农药最为直接有效，但要注意用量和方法，一定要适度，对病虫的防治要放在心上。"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="玉米种植建议"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="         玉米种植，先整地翻耕，起大垄选择适当翻耕除茬耙细的中上等肥力的地块，平、洼地不限。在垄距0.5米的原垄基础上起大垄，即两垄合一成行距1米的大垄，垄面宽0.7米左右就比较适合。"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="         玉米生长期较短，生长期内要求温暖多雨。所以一般都是三月份开始大面积种植。在播种前建议进行温水浸种。用2份开水，1份冷水，温度在55度左右，浸泡玉米种子8—12小时，摊晒后播种。这种方法能加速种子吸水过程，还能杀死附着种子表面的黑粉病菌孢子。"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="         一般玉米播种方法主要有条播和点播两种。点播按计划的行距、株距开穴，施肥、点种、覆土，套种玉米多采用此种方法。条播是用机械播种，工作效率比较高，适用于大面积种植。播种深度：一般情况下播种深度3-5cm为宜，有时可看情况适当增加播种深度。"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="         玉米的生育时期一般为：苗期、三叶期、拔节期、大喇叭期、抽雄期、开花期（吐丝期）、灌浆期、乳熟期、蜡熟期、完熟期。玉米耗水量大，玉米苗期是指播种至拔节的一段时间，是以生根、分化茎叶为主的营养生长阶段。本阶段的生育特点是：根系发育较快，但地上部茎、叶量的增长比较缓慢。为此，田间管理的中心任务就是促进根系发育、培育壮苗，达到苗早、苗足、苗齐、苗壮的“四苗”要求。"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="         玉米穗有雌穗和雄穗之分，顶部的是雄穗（雄花），也成天花。在茎上面的带着须须（花丝）的是雌穗，花丝就是玉米的雌花。一般说的玉米穗是指雌穗，即玉米棒子玉米穗一般和玉米须一起长出，有须的时候就要注意授粉情况了。授粉情况直接影响到结棒质量，能不能长成就靠它，所以这个是很重要的一个环节。这里值得注意的是后期一定要注意玉米穗腐病，病虫防治，田间管理，注意理枝通风。"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

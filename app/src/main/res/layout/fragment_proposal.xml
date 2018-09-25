@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/button_bg"
+        android:id="@+id/corn_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="玉米种植建议" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/button_bg"
+        android:id="@+id/potato_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="土豆种植建议" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/button_bg"
+        android:id="@+id/cabbage_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="白菜种植建议" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/button_bg"
+        android:id="@+id/apple_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="苹果种植建议" />
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="白菜种植建议"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="        白菜的菜籽很小，所以在种植的时候要把土地翻松动，当土地松动后，就可以浇少量的水，然后种菜，再用细土掩盖；切记，当白菜长出来的时候，适当浇水，不能浇太多的水，那样容易导致白菜随风而倒；白菜的生长习性？发芽期：从种子发芽出土到叶子吐露，为发芽期；一般来说，白菜的发芽期在适宜的温度和土壤条件下，为3~5天；幼苗期：早熟品种幼苗期发生5片叶，需要12~15甜；晚熟品种幼苗期发生8片叶，需要17~18天；"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="        莲座期：植株中心发生的幼小心叶开始抱合，为莲座期结束的特征；这一个时期，早熟品种需要经过20~21天；晚熟品种需要经过27~28天；结球期：早熟品种需要25~30天，晚熟品种需要50天左右；休眠期：气候转冷后，叶球进入休眠期总而言之，在种植某一项作物的过程中，选种是前提也是最为关键的，其次，在作物生长期间的施肥、灌溉、防治病虫害等阶段也是至关重要，每一步都不出差错，才能够确保增产增收！"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="        大白菜种植不能连作，也不能与其它十字花科蔬菜轮作。播种方法，开挖5～10厘米深的沟，先顺沟浇水，水渗透后，可将种子均匀撒在沟内，并撒盖0.8～1厘米厚的细土，每亩用种量0.5千克左右，直播大白菜待幼芽出土后，采取勤浇小水，保持地面湿润降低地表温度。在无雨的情况下，一般于播种当日或次日浇水1遍，务求将垄面湿透，播种第三日浇第二遍水促使大部分幼芽出土。"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="        苗龄一般在15～20天，幼苗有5～6片真叶时，为移栽的最佳适期。移栽最好在下午进行。根据品种确定适宜的密度。栽后立即浇水。以后每天早晚各浇一次水，连续3～4天，以利缓苗保活。"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

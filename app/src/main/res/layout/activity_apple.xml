@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="苹果种植建议"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="         苹果适于土层深厚、排水良好和富含有机质的沙质壤土。土壤酸碱度(PH值)以微酸性到中性为宜。 苹果也是一种对土壤适应性较强的高产果树。一般山冈薄地、河滩沙荒和轻度盐碱地，经过适当改良后，都可进行成片栽培，获得较高的经济收入。最适于土层深厚、排水良好和富含有机质的沙质壤土。土壤酸碱度（PH值）以微酸性到中性为宜。土壤通气不良时，根系生长受阻。PH7．8以上时，易发生缺素失绿现象。对土壤的耐盐力低于0．15％。"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="          苹果为蔷薇科苹果属植物。生产上主要应用的是1个种，即苹果。现在世界上栽培的苹果品种，绝大部分属于这个种或为该种和其他种的杂种。该种有两个变种，道生苹果和乐园苹果，常被用作矮化或半矮化砧。生产上用作砧木的种，尚有西府海棠、海棠果、湖北海棠、河南海棠和山定子等。 苹果品种繁多，但作为经济栽培的数量不多。通过栽培实践，世界各国都根据自己国内的具体情况确定了一些适应本国栽培的优良品种，其中有些已成为世界上广泛经济栽培的品种，如金冠、红星、富士等。近些年，有些品种通过广泛的芽变选种和杂交育种，已各自形成～个较为庞大的系群。除上述金冠系、元帅系（红星是其中的芽变品种）和富士系外，还有旭系、红玉系、史密斯系和国光系等。在这些系群中，尚可根据株型进一步分为普通型和短枝型两类。如新红星、首红、超红等都是元帅系中的短枝型品种，金矮生、矮金冠等都是金冠系中的短枝型品种。其他各系也大多有各自的短枝型品种，如短枝富士、短枝国光等。一些品种还已有成优良的着色系。"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
