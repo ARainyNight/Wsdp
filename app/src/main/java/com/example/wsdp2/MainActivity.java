@@ -6,10 +6,8 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
 
 import com.example.wsdp2.adapter.ViewPagerAdapter;
-import com.example.wsdp2.fragment.BaseFragment;
 import com.example.wsdp2.fragment.DataFragment;
 import com.example.wsdp2.fragment.ProposalFragment;
 import com.example.wsdp2.fragment.WeatherFragment;
