@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+    <com.veken.chartview.view.LineChartView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/chart_view"
+        app:showPicResource="@mipmap/ic_launcher"
+        app:defaultStrokeWidth="0.5dp"
+        app:pointClickRadius="3dp"
+        app:defaultTextSize="16sp"
+        app:pointDefaultRadius="2dp"
+        app:isNeedBg="true"
+        app:clickable="true"
+        app:startColor="@color/startColor"
+        app:endColor="@color/endColor"/>
+
+</LinearLayout>

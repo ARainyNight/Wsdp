@@ -10,14 +10,15 @@ import android.view.View;
 
 import com.example.wsdp2.adapter.ViewPagerAdapter;
 import com.example.wsdp2.fragment.BaseFragment;
+import com.example.wsdp2.fragment.DataFragment;
 import com.example.wsdp2.fragment.ProposalFragment;
 import com.example.wsdp2.fragment.WeatherFragment;
 import com.example.wsdp2.helper.BottomNavigationViewHelper;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ViewPager viewPager ;
-    private MenuItem menuItem ;
+    private ViewPager viewPager;
+    private MenuItem menuItem;
     private BottomNavigationView bottomNavigationView;
 
     @Override
@@ -25,13 +26,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        viewPager = (ViewPager)findViewById(R.id.viewpager);
-        bottomNavigationView =(BottomNavigationView)findViewById(R.id.bottom_navigation);
+        viewPager = (ViewPager) findViewById(R.id.viewpager);
+        bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         BottomNavigationViewHelper.disableShiftMode(bottomNavigationView);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()){
+                switch (item.getItemId()) {
                     case R.id.item_weather:
                         viewPager.setCurrentItem(0);
                         break;
@@ -40,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.item_proposal:
                         viewPager.setCurrentItem(2);
+                        break;
+                    default:
                         break;
                 }
                 return false;
@@ -54,13 +57,13 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onPageSelected(int position) {
-                if (menuItem!=null){
+                if (menuItem != null) {
                     menuItem.setChecked(false);
-                }else {
+                } else {
                     bottomNavigationView.getMenu().getItem(0).setChecked(false);
                 }
 
-                menuItem =bottomNavigationView.getMenu().getItem(position);
+                menuItem = bottomNavigationView.getMenu().getItem(position);
                 menuItem.setChecked(true);
             }
 
@@ -77,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
 
         adapter.addFragment(new WeatherFragment());
-        adapter.addFragment(BaseFragment.newInstance("数据"));
+        adapter.addFragment(new DataFragment());
         adapter.addFragment(new ProposalFragment());
         viewPager.setAdapter(adapter);
     }
