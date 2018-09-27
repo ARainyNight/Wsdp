@@ -19,6 +19,9 @@ public class Utils {
     //DATA
     public static String DATA_JSON ="http://10.0.116.57:9998/GreenHouse/lists";
 
+    //开关灯url
+    public static String CONTROL_URL="http://10.0.116.57:9998/GreenHouse/control";
+
     //开灯
     public static String OPEN_URL="0F";
 

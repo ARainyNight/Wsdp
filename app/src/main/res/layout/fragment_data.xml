@@ -36,11 +36,40 @@
             android:gravity="center"
             android:layout_weight="1"/>
     </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/bottom_shadow"
+        />
     <android.support.v7.widget.RecyclerView
         android:id="@+id/data_recyclerview"
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
-        android:layout_height="400dp" />
+        android:layout_height="350dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/bottom_shadow"/>
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开灯"
+        android:background="@drawable/button_bg"
+        android:id="@+id/open_btn"/>
+    <Button
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/button_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关灯"
+        android:id="@+id/close_btn"/>
 
 
 </LinearLayout>

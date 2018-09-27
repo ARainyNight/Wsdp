@@ -9,6 +9,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.wsdp2.R;
 import com.example.wsdp2.adapter.DataAdapter;
@@ -38,7 +40,7 @@ import okhttp3.internal.Util;
  * Created by lin on 2018/9/25.
  * 描述:
  */
-public class DataFragment extends Fragment {
+public class DataFragment extends Fragment implements View.OnClickListener{
 
     private ArrayList<ChartBean> lineChartBeanList;
     private LineChartView lineChartView;
@@ -52,6 +54,9 @@ public class DataFragment extends Fragment {
     private DataAdapter adapter;
     private RecyclerView recyclerView;
 
+    private Button open_btn;
+    private Button close_btn;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
@@ -59,6 +64,11 @@ public class DataFragment extends Fragment {
 
         //初始化Recyclerview
         initRecyclerView(view);
+
+        open_btn=(Button)view.findViewById(R.id.open_btn);
+        close_btn=(Button)view.findViewById(R.id.close_btn);
+        open_btn.setOnClickListener(this);
+        close_btn.setOnClickListener(this);
         return view;
     }
 
@@ -184,4 +194,67 @@ public class DataFragment extends Fragment {
 
     }
 
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.open_btn:
+                L.d("开灯");
+                OkHttpClient client1= new OkHttpClient();
+                Request request1 = new Request.Builder()
+                        .url(Utils.CONTROL_URL+"?flag="+Utils.OPEN_URL)
+                        .get().build();
+                client1.newCall(request1).enqueue(new Callback() {
+                    @Override
+                    public void onFailure(Call call, IOException e) {
+                        getActivity().runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                Toast.makeText(getActivity(),"开灯失败",Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                    }
+
+                    @Override
+                    public void onResponse(Call call, Response response) throws IOException {
+                        getActivity().runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                Toast.makeText(getActivity(),"开灯成功",Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                    }
+                });
+                //开灯
+                break;
+            case R.id.close_btn:
+                L.d("关灯");
+                //关灯
+                OkHttpClient client2= new OkHttpClient();
+                Request request2 = new Request.Builder()
+                        .url(Utils.CONTROL_URL+"?flag="+Utils.CLOSE_URL)
+                        .get().build();
+                client2.newCall(request2).enqueue(new Callback() {
+                    @Override
+                    public void onFailure(Call call, IOException e) {
+                        getActivity().runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                Toast.makeText(getActivity(),"关灯失败",Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                    }
+
+                    @Override
+                    public void onResponse(Call call, Response response) throws IOException {
+                        getActivity().runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                Toast.makeText(getActivity(),"关灯成功",Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                    }
+                });
+                break;
+        }
+    }
 }
