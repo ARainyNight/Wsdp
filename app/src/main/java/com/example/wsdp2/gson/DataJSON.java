@@ -6,34 +6,41 @@ package com.example.wsdp2.gson;
  */
 public class DataJSON {
 
-
     /**
-     * date : 2018-09-17 21:54:07.0
-     * humi : 100.0
-     * id : 6
-     * light : 129.58
-     * temp : 615.72
+     * date : 1537718400000
+     * temp : 2.1
+     * humi : 3.2
+     * id : 1
+     * illu : 222
      */
 
-    private String date;
-    private String humi;
+    private long date;
+    private double temp;
+    private double humi;
     private int id;
-    private String light;
-    private String temp;
+    private int illu;
 
-    public String getDate() {
+    public long getDate() {
         return date;
     }
 
-    public void setDate(String date) {
+    public void setDate(long date) {
         this.date = date;
     }
 
-    public String getHumi() {
+    public double getTemp() {
+        return temp;
+    }
+
+    public void setTemp(double temp) {
+        this.temp = temp;
+    }
+
+    public double getHumi() {
         return humi;
     }
 
-    public void setHumi(String humi) {
+    public void setHumi(double humi) {
         this.humi = humi;
     }
 
@@ -45,19 +52,11 @@ public class DataJSON {
         this.id = id;
     }
 
-    public String getLight() {
-        return light;
+    public int getIllu() {
+        return illu;
     }
 
-    public void setLight(String light) {
-        this.light = light;
-    }
-
-    public String getTemp() {
-        return temp;
-    }
-
-    public void setTemp(String temp) {
-        this.temp = temp;
+    public void setIllu(int illu) {
+        this.illu = illu;
     }
 }

@@ -1,5 +1,9 @@
 package com.example.wsdp2.utils;
 
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
+
 /**
  * Created by lin on 2018/9/25.
  * 描述:
@@ -13,5 +17,27 @@ public class Utils {
     public static String CUI_JSON="http://10.0.116.74:8080/sensor/json";
 
     //DATA
-    public static String DATA_JSON ="http://localhost:8080/GreenHouse/listCategory";
+    public static String DATA_JSON ="http://10.0.116.57:9998/GreenHouse/lists";
+
+    //开灯
+    public static String OPEN_URL="0F";
+
+    //关灯
+    public static String CLOSE_URL="00";
+
+
+    //封装提示框
+    public static void Dialog(Context mContext, String message){
+        final AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
+        builder.setTitle("提示")
+                .setMessage(message)
+                .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                })
+                .create()
+                .show();
+    }
 }

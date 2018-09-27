@@ -7,7 +7,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.wsdp2.R;
-import com.example.wsdp2.entity.Data;
+import com.example.wsdp2.gson.DataJSON;
+import com.example.wsdp2.utils.L;
 
 import java.util.List;
 
@@ -17,7 +18,8 @@ import java.util.List;
  */
 public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
 
-    private List<Data> mDataList;
+    private List<DataJSON> mDataList;
+
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -26,17 +28,18 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
         return viewHolder;
     }
 
-    public DataAdapter(List<Data> dataList) {
+    public DataAdapter(List<DataJSON> dataList) {
         mDataList = dataList;
     }
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        Data data = mDataList.get(position);
-        holder.data_date.setText(data.getDate());
-        holder.data_temp.setText(data.getTemp());
-        holder.data_humi.setText(data.getHumi());
-        holder.data_lllumi.setText(data.getLllumi());
+        DataJSON data = mDataList.get(position);
+        L.d("..................................................");
+        holder.data_date.setText(data.getDate()+"");
+        holder.data_temp.setText(data.getTemp()+"");
+        holder.data_humi.setText(data.getHumi()+"");
+        holder.data_lllumi.setText(data.getIllu()+"");
     }
 
     @Override
