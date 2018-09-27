@@ -11,4 +11,7 @@ public class Utils {
 
     //崔哲的json数据
     public static String CUI_JSON="http://10.0.116.74:8080/sensor/json";
+
+    //DATA
+    public static String DATA_JSON ="http://localhost:8080/GreenHouse/listCategory";
 }
