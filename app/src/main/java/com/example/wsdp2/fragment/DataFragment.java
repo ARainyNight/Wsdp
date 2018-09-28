@@ -1,5 +1,6 @@
 package com.example.wsdp2.fragment;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -13,6 +14,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.wsdp2.R;
+import com.example.wsdp2.TodayDataActivity;
 import com.example.wsdp2.adapter.DataAdapter;
 import com.example.wsdp2.gson.DataJSON;
 import com.example.wsdp2.utils.L;
@@ -56,6 +58,7 @@ public class DataFragment extends Fragment implements View.OnClickListener{
 
     private Button open_btn;
     private Button close_btn;
+    private Button query_today_data;
 
     @Nullable
     @Override
@@ -67,8 +70,11 @@ public class DataFragment extends Fragment implements View.OnClickListener{
 
         open_btn=(Button)view.findViewById(R.id.open_btn);
         close_btn=(Button)view.findViewById(R.id.close_btn);
+        query_today_data=(Button)view.findViewById(R.id.query_today_data);
+
         open_btn.setOnClickListener(this);
         close_btn.setOnClickListener(this);
+        query_today_data.setOnClickListener(this);
         return view;
     }
 
@@ -181,7 +187,7 @@ public class DataFragment extends Fragment implements View.OnClickListener{
         for (JsonElement data : jsonArray) {
             DataJSON dataJSON = gson.fromJson(data, DataJSON.class);
             double temp = dataJSON.getTemp();
-            if (temp>=500){
+            if (temp>=600){
                 Utils.Dialog(getActivity(),"温度超标日期"+dataJSON.getDate());
             }
             dataJSONArrayList.add(dataJSON);
@@ -198,6 +204,7 @@ public class DataFragment extends Fragment implements View.OnClickListener{
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.open_btn:
+                //开灯
                 L.d("开灯");
                 OkHttpClient client1= new OkHttpClient();
                 Request request1 = new Request.Builder()
@@ -224,7 +231,6 @@ public class DataFragment extends Fragment implements View.OnClickListener{
                         });
                     }
                 });
-                //开灯
                 break;
             case R.id.close_btn:
                 L.d("关灯");
@@ -254,6 +260,11 @@ public class DataFragment extends Fragment implements View.OnClickListener{
                         });
                     }
                 });
+                break;
+            case R.id.query_today_data:
+                //查询今天数据
+                Intent intent1 = new Intent(getActivity(), TodayDataActivity.class);
+                startActivity(intent1);
                 break;
         }
     }

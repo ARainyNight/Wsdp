@@ -7,69 +7,98 @@
 
 
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.8"
+            android:gravity="center"
+            android:text="日期" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="温度" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="湿度" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="光照" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/bottom_shadow" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/data_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="4dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/bottom_shadow" />
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/query_today_data"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询今天数据"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            />
+    </LinearLayout>
+    <LinearLayout
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <TextView
+
+        <Button
+            android:id="@+id/open_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="日期"
-            android:gravity="center"
-            android:layout_weight="2.8"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="温度"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:layout_weight="1"
-            android:gravity="center"/>
-        <TextView
+            android:background="@drawable/button_bg"
+            android:text="开灯" />
+
+        <Button
+            android:id="@+id/close_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="湿度"
-            android:gravity="center"
-            android:layout_weight="1"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="光照"
-            android:gravity="center"
-            android:layout_weight="1"/>
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:text="关灯" />
     </LinearLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="3dp"
-        android:background="@drawable/bottom_shadow"
-        />
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/data_recyclerview"
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="350dp" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="3dp"
-        android:background="@drawable/bottom_shadow"/>
-    <Button
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="开灯"
-        android:background="@drawable/button_bg"
-        android:id="@+id/open_btn"/>
-    <Button
-
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="7dp"
-        android:background="@drawable/button_bg"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="关灯"
-        android:id="@+id/close_btn"/>
 
 
 </LinearLayout>

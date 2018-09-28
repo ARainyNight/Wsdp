@@ -34,7 +34,8 @@
         <activity android:name=".proposal.AppleActivity" />
         <activity android:name=".proposal.CabbageActivity" />
         <activity android:name=".proposal.CornActivity" />
-        <activity android:name=".proposal.PotatoActivity"/>
+        <activity android:name=".proposal.PotatoActivity" />
+        <activity android:name=".TodayDataActivity"></activity>
     </application>
 
 </manifest>

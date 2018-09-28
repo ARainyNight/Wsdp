@@ -28,6 +28,8 @@ public class Utils {
     //关灯
     public static String CLOSE_URL="00";
 
+    //查询今天数据
+    public static String QUERY_TODAY_DATA="http://10.0.116.57:9998/GreenHouse/listCategory";
 
     //封装提示框
     public static void Dialog(Context mContext, String message){
