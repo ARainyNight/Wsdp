@@ -33,7 +33,7 @@ dependencies {
     implementation 'com.github.ForgetAll:LoadingDialog:v1.0.4'
     //GSON
     implementation 'com.google.code.gson:gson:2.8.5'
-    //折线图
+
     implementation 'com.veken:chart_view:1.0.2'
 
     implementation 'com.android.support:recyclerview-v7:26.1.0'
