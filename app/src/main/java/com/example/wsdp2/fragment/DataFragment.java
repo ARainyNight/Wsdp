@@ -182,7 +182,7 @@ public class DataFragment extends Fragment implements View.OnClickListener{
             DataJSON dataJSON = gson.fromJson(data, DataJSON.class);
             double temp = dataJSON.getTemp();
             if (temp>=500){
-                Utils.Dialog(getActivity(),"温度超标");
+                Utils.Dialog(getActivity(),"温度超标日期"+dataJSON.getDate());
             }
             dataJSONArrayList.add(dataJSON);
         }
